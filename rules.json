@@ -1,0 +1,10 @@
+[
+    {
+        "url_part": "courseinstanceAutofiller.js",  
+        "file_path": "/home/geo/deeznuts.js"
+    },
+    {
+        "url_part": "another_url_part",
+        "file_path": "/path/to/another/file"
+    }
+]
