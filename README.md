@@ -1,8 +1,13 @@
-# Basic Autoresponder
+# Simple HTTP Autoresponder
+
+A simple alternative to fiddler autoresponder for linux.
 
 ## Requirements
 
-Install mitmproxy
+- Python
+- Mitmproxy
+
+Install mitmproxy (Arch)
 
 ```
 sudo pacman -S mitmproxy
@@ -17,7 +22,7 @@ sudo trust extract-compat
 
 ## Usage
 
-1. Edit rules.conf
+1. Edit rules.json
 2. Run the proxy
 
 ```
