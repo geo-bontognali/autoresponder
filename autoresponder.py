@@ -3,7 +3,7 @@ from mitmproxy import http
 import json
 
 # Load rules from a separate JSON file
-with open("/home/geo/repos/autoresponder/rules.json", "r") as f:
+with open("rules.json", "r") as f:
     rules = json.load(f)
 
 def request(flow: http.HTTPFlow) -> None:
@@ -15,6 +15,9 @@ def request(flow: http.HTTPFlow) -> None:
             flow.response = http.Response.make(
                 status_code=200,
                 content=file_content,
-                headers={"Content-Type": "application/octet-stream"}
+                headers={
+                    "Content-Type": "application/octet-stream",
+                    "Access-Control-Allow-Origin": "*",
+                }
             )
 
